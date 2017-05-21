@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,6 +16,8 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Https" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
   </ItemGroup>
 
 </Project>

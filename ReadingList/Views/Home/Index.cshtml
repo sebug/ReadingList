@@ -1,0 +1,21 @@
+﻿@using System.Security.Principal
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dynamic Home</title>
+	</head>
+	<body>
+		<h1>Dynamic Home</h1>
+
+		@if (User.Identity.IsAuthenticated)
+		{
+		<p>Hello, @User.Identity.Name</p>
+		<p>@Html.ActionLink("Log Out", "LogOff", "Account")</p>
+		}
+		else
+		{
+		<p>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
+		}
+	</body>
+</html>

@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace ReadingList.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class BooksController : Controller
     {
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Book 1", "Book 2" };
         }
 
         // GET api/values/5
