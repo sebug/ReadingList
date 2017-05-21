@@ -81,10 +81,7 @@ namespace ReadingList
         }
 
 		private Task TokenValidated(TokenValidatedContext context)
-		{
-			/* ---------------------
-            // Replace this with your logic to validate the issuer/tenant
-               ---------------------       
+		{     
             // Retriever caller data from the incoming principal
             string issuer = context.SecurityToken.Issuer;
             string subject = context.SecurityToken.Subject;
@@ -92,12 +89,11 @@ namespace ReadingList
             // Build a dictionary of approved tenants
             IEnumerable<string> approvedTenantIds = new List<string>
             {
-                "<Your tenantID>",
+                
                 "9188040d-6c67-4c5b-b112-36a304b66dad" // MSA Tenant
             };
             if (!approvedTenantIds.Contains(tenantID))
                 throw new SecurityTokenValidationException();
-              --------------------- */
 
 			return Task.FromResult(0);
 		}
